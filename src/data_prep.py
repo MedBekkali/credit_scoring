@@ -86,10 +86,6 @@ def build_preprocessor(df: pd.DataFrame) -> ColumnTransformer:
     return preprocessor
 
 def build_datasets():
-    """Main function used by notebooks.
-    Returns:
-        train_df (with TARGET), test_df (without TARGET).
-    """
     app_train, app_test, bureau, prev, pos, cc, inst, bureaubal = load_raw()
 
     bureau_agg    = aggregate_bureau(bureau)

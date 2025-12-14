@@ -1,0 +1,10 @@
+artifact_location: file:C:\Users\Moham\PycharmProjects\Credit_Scoring\mlruns_V_F/348820161156891976/models/m-35b16154f2b444eb8d92628c1d4c7964/artifacts
+creation_timestamp: 1765668039166
+experiment_id: '348820161156891976'
+last_updated_timestamp: 1765668045386
+model_id: m-35b16154f2b444eb8d92628c1d4c7964
+model_type: null
+name: model
+source_run_id: 2c274d9d7b7f462d8e3be55e48cb3b32
+status: 2
+status_message: null

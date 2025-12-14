@@ -5,20 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d47b01fd-62ad-422a-9e0e-ed713e9c7732" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Credit_Scoring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/01_data_preparation.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/02_model-training_V3.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/02_model_training.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/02_model_training_V2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/03_explainability.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/02_model_training_V3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/04_mlflow_serving_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/explainability.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/MLmodel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conda.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/python_env.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/02_model-training_V3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/02_model-training_V3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/03_explainability.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/03_explainability.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/figures/courbe_cout_vs_seuil.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/figures/courbe_cout_vs_seuil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_prep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.data_prep.executor": "Run",
+    "Python.explainability.executor": "Run",
     "Python.metrics.executor": "Run",
     "Python.model_utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -55,7 +56,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "to.speed.mode.migration.done": "true"
   }

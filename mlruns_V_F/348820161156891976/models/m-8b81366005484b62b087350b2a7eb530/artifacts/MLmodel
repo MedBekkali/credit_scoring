@@ -1,0 +1,22 @@
+artifact_path: file:C:\Users\Moham\PycharmProjects\Credit_Scoring\mlruns_V_F/348820161156891976/models/m-8b81366005484b62b087350b2a7eb530/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.7.0
+model_id: m-8b81366005484b62b087350b2a7eb530
+model_size_bytes: 1088093
+model_uuid: m-8b81366005484b62b087350b2a7eb530
+prompts: null
+run_id: 9d8ea1cec8054198bce771d75b5f2ad2
+utc_time_created: '2025-12-13 23:14:06.719318'

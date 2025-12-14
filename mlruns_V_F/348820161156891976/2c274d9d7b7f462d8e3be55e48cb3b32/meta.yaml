@@ -1,0 +1,14 @@
+artifact_uri: file:C:\Users\Moham\PycharmProjects\Credit_Scoring\mlruns_V_F/348820161156891976/2c274d9d7b7f462d8e3be55e48cb3b32/artifacts
+end_time: 1765668045395
+entry_point_name: ''
+experiment_id: '348820161156891976'
+lifecycle_stage: active
+run_id: 2c274d9d7b7f462d8e3be55e48cb3b32
+run_name: logreg_baseline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765668000371
+status: 3
+tags: []
+user_id: Moham

@@ -1,0 +1,14 @@
+artifact_uri: file:C:\Users\Moham\PycharmProjects\Credit_Scoring\mlruns_V_F/348820161156891976/fa4c68bb3ef649ebaa5b0c2e62bbd35a/artifacts
+end_time: 1765668164808
+entry_point_name: ''
+experiment_id: '348820161156891976'
+lifecycle_stage: active
+run_id: fa4c68bb3ef649ebaa5b0c2e62bbd35a
+run_name: lgbm_final_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765668155679
+status: 4
+tags: []
+user_id: Moham

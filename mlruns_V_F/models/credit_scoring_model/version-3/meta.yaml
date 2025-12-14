@@ -1,0 +1,15 @@
+creation_timestamp: 1765668700266
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1765668700266
+model_id: m-56bd967f0e76408d9036a7ffb57a06f1
+name: credit_scoring_model
+run_id: b765da5197ad4811a9393253fb1ebf99
+run_link: null
+source: models:/m-56bd967f0e76408d9036a7ffb57a06f1
+status: READY
+status_message: null
+storage_location: file:C:\Users\Moham\PycharmProjects\Credit_Scoring\mlruns_V_F/348820161156891976/models/m-56bd967f0e76408d9036a7ffb57a06f1/artifacts
+user_id: null
+version: 3

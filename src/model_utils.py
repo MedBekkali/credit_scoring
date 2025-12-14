@@ -1,17 +1,3 @@
-# src/model_utils.py
-"""
-Fonctions utilitaires pour :
-- découper le jeu de données (train / validation),
-- construire le pipeline de modèle (Random Forest + préprocessing),
-- faire une validation croisée AUC,
-- entraîner le modèle final,
-- évaluer le coût métier,
-- sauvegarder le pipeline sur disque.
-
-Les notebooks (02_model_training, 03_explainability, 04_mlflow_serving_test)
-doivent importer ces fonctions plutôt que dupliquer le code.
-"""
-
 from pathlib import Path
 from typing import Tuple
 
@@ -25,8 +11,6 @@ from sklearn.ensemble import RandomForestClassifier
 
 from .data_prep import build_preprocessor
 from .metrics import business_cost
-
-
 # ----------------------------
 # 1. Split train / validation
 # ----------------------------
@@ -35,13 +19,7 @@ def split_train_valid(
     test_size: float = 0.2,
     random_state: int = 42
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
-    """
-    Découpe le DataFrame d'apprentissage en :
-    - X_train, X_valid, y_train, y_valid
 
-    Le split est stratifié sur TARGET pour conserver le déséquilibre
-    dans chaque sous-échantillon.
-    """
     X = train_df.drop(columns=["TARGET"])
     y = train_df["TARGET"]
 
@@ -67,13 +45,7 @@ def build_rf_pipeline(
     random_state: int = 42,
     n_jobs: int = -1,
 ) -> Pipeline:
-    """
-    Construit un pipeline sklearn :
-    - étape 1 : préprocessing (imputation, encodage),
-    - étape 2 : RandomForestClassifier.
 
-    On passe train_df pour que build_preprocessor connaisse toutes les colonnes.
-    """
     preprocessor = build_preprocessor(train_df)
 
     rf = RandomForestClassifier(
@@ -104,12 +76,6 @@ def cross_val_auc(
     random_state: int = 42,
     n_jobs: int = -1,
 ) -> tuple[float, float, np.ndarray]:
-    """
-    Calcule l'AUC-ROC moyenne et son écart-type par validation croisée
-    stratifiée, pour un pipeline donné.
-
-    Retourne : (auc_mean, auc_std, scores_par_fold)
-    """
     cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=random_state)
 
     scores = cross_val_score(
@@ -147,12 +113,6 @@ def evaluate_business_cost(
     cost_fn: float = 10.0,
     cost_fp: float = 1.0,
 ) -> tuple[float, dict]:
-    """
-    Calcule le coût métier moyen (FN pondéré 10x par défaut) pour un pipeline
-    et un seuil donnés.
-
-    Retourne : (coût_moyen, dictionnaire_matrice_confusion)
-    """
     y_proba = pipeline.predict_proba(X)[:, 1]
 
     cost, confusion = business_cost(
@@ -173,12 +133,7 @@ def save_pipeline(
     pipeline: Pipeline,
     path: str | Path = "../model/model.pkl",
 ) -> Path:
-    """
-    Sauvegarde le pipeline entraîné dans un fichier .pkl avec joblib.
-    (Ce n'est pas l'artefact MLflow, mais un backup pratique.)
 
-    Le dossier parent est créé au besoin.
-    """
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     joblib.dump(pipeline, path)
